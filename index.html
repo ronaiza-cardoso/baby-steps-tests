@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Baby-steps-tests by yesroh</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Baby-steps-tests</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/yesroh/baby-steps-tests/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/yesroh/baby-steps-tests/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/yesroh/baby-steps-tests">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/yesroh">yesroh</a></p>
+
+
+      </header>
+      <section>
+        <h1>
+<a id="baby-steps-tests" class="anchor" href="#baby-steps-tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Baby Steps Tests</h1>
+
+<p>esse artigo irá te guiar dentro do mundo de teste unitário no NodeJS</p>
+
+<h2>
+<a id="setup-ambiente" class="anchor" href="#setup-ambiente" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup Ambiente</h2>
+
+<p>para acompanhar os códigos desse projeto é preciso ter o NodeJS na em seu ambiente de trabalho, nesse <a href="https://nodejs.org/en/download/current/">link</a>
+você pode fazer o download de acordo com o seu sistema operacional.</p>
+
+<p>Esse projeto irá utilizar o test runner <a href="https://mochajs.org/">mocha</a> e a biblioteca de asserções <a href="http://chaijs.com/">chai</a>*</p>
+
+<p>*acesse o site de cada um para maiores informações</p>
+
+<h2>
+<a id="iniciando-o-projeto" class="anchor" href="#iniciando-o-projeto" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Iniciando o projeto</h2>
+
+<p>Todas as dependencias necessárias para rodar um projeto node deve ser colocado no package.json
+ele pode ser criado por meio do comando <code>npm init</code>. Esse comando irá criar um arquivo de nome
+package.json com todas as informações do seu projeto.</p>
+
+<pre><code>name: (baby-steps-test)
+version: (1.0.0)
+description: just a project to show some baby steps on test in NodeJS
+entry point: (Calc.js)
+test command: mocha -w
+git repository: https://github.com/yesroh/baby-steps-tests.git
+keywords: TESTS, NODE, JS
+author: Ronaiza Cardoso &lt;ronaizacard@gmail.com&gt;
+license: (ISC) MIT
+</code></pre>
+
+<p>em  <code>scripts</code> podemos colocar atalhos que podemos usar para agilizar o nosso desempenho
+alí coloquei o <code>mocha</code> com o parâmetro <code>-w</code> para que o mocha fique vendo o nosso arquivo enquanto
+fazemos o teste. Para utilizar o mocha por meio do cli(command line interface) você precisa instalar
+ele globalmente por meio do comando <code>npm install mocha -g</code></p>
+
+<h2>
+<a id="primeiro-teste" class="anchor" href="#primeiro-teste" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Primeiro teste</h2>
+
+<p>Vamos testar uma classe calculadora, segue abaixo a classe</p>
+
+
+
+<p>agora dentro da pasta test vamos criar os nossos testes, o nome desse teste será calc.spec.js, é 
+uma boa prática utilizar como nome dos nossos testes o nome da classe que será testada e o .spec. 
+assim o mocha saberá que aquele arquivo se trata de um teste.</p>
+
+<p>No arquivo abaixo estamos importando a classe calc e as a lib do chai, para que assim possamos
+utilizar o a dot notation em nosso teste.</p>
+
+<p>na linha 7 colocamos o nome do aquivo que iremos testar, no it o que esse teste deverá fazer</p>
+
+
+
+<p>aqui você poderá conferir os demais testes da nossa classe.</p>
+
+
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>

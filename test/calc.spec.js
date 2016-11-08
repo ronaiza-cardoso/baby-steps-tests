@@ -11,9 +11,21 @@ describe('name of file - Calc', ( ) => {
         done();
     });
 
-    it('sub shoul return 9', (done) => {
+    it('sub should return 9', (done) => {
         let resultSub = Calc.sub( 10, 1 );
         expect( resultSub ).to.be.equal( 9 );
+        done();
+    });
+
+    it('mult should return 10', (done) => {
+        let resultMult = Calc.mult( 2, 5 );
+        expect( resultMult ).to.be.equal( 10 );
+        done();
+    });
+
+    it('div should return 10', (done) => {
+        let resultDiv = Calc.div( 20, 2 );
+        expect( resultDiv ).to.be.equal( 10 );
         done();
     });
 });

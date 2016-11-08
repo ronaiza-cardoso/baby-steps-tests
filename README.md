@@ -37,8 +37,8 @@ ele globalmente por meio do comando ``npm install mocha -g``
 
 Vamos testar uma classe calculadora, segue abaixo a classe
 
-<script src="https://gist.github.com/yesroh/57eb3268e54efeabf6daf4fe22b6bd69.js"></script>
-
+[Calc.js](https://gist.github.com/57eb3268e54efeabf6daf4fe22b6bd69.git)
+ 
 agora dentro da pasta test vamos criar os nossos testes, o nome desse teste será calc.spec.js, é 
 uma boa prática utilizar como nome dos nossos testes o nome da classe que será testada e o .spec. 
 assim o mocha saberá que aquele arquivo se trata de um teste.
@@ -48,8 +48,8 @@ utilizar o a dot notation em nosso teste.
 
 na linha 7 colocamos o nome do aquivo que iremos testar, no it o que esse teste deverá fazer
 
-<script src="https://gist.github.com/yesroh/0c312669526512c5c95ba969f975bcb4.js"></script>
+[calc.spec.js](https://gist.github.com/0c312669526512c5c95ba969f975bcb4.git)
 
 aqui você poderá conferir os demais testes da nossa classe.
 
-<script src="https://gist.github.com/yesroh/62e602adf5fefc8d693390346b351915.js"></script>
+[calc.spec.js](https://gist.github.com/62e602adf5fefc8d693390346b351915.git)
